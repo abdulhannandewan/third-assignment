@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +8,218 @@
   <!-- cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
-
+<!-- google font lato  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+  .font-lato{
+    font-family: "Lato", sans-serif;
+  }
+</style>
 </head>
-<body>
+<body class="font-lato">
   <header>
 <!-- navber section  -->
+<nav class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24">
+  <div class="navbar rounded-full text-white bg-[#F85559]">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#F85559] rounded-box w-52">
+          <li><a>Home</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Shop</a></li>
+          <li><a>All Fruits</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar-center">
+      <a class="btn btn-ghost text-xl"><span><img class="w-7 items-center" src="images/logo.png" alt=""></span>
+           Fruit Burst</a>
+    </div>
+    <div class="navbar-end">
+      <input type="search" placeholder="Subscribe " name="" class="rounded-full" id="">
+      <button class="btn btn-ghost btn-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+      </button>
+    </div>
+  </div>
 
+
+</nav>
+<!-- nav section end  -->
   </header>
   <main>
+<!-- hero section on  -->
+<section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 mt-14  ">
+
+  <div class="hero border-3 rounded-xl pb-16 pt-16  " style="background-image: url(./images/banner1.png);">
+    <div class="hero-overlay bg-opacity-40"></div>
+    <div class="hero-content text-center text-neutral-content">
+      <div class="max-w-md">
+        <h1 class="mb-5  text-4xl font-bold">Exotic tastes at your doorstep</h1>
+        <p class="mb-5">We supply highly quality organic products</p>
+        <button class="btn  "> Shop Now</button>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- hero section end  -->
+<!-- friuits section  -->
+<section class="max-w-screen-xl mx-auto bg-slate-100 mt-10 px-8 md:px-16 lg:px-24  ">
+  <div class="grid md:grid-cols-3 lg:grid-cols-5 grid-cols-2  min-w-max  p-8">
+    <div class="flex flex-col justify-center items-center ">
+<img class="" src="./images/fruit1.png" alt="">
+<h2 class="text-xl ">Strawbery</h2>
+    </div>
+    <div class="flex flex-col justify-center items-center ">
+<img class="" src="./images/fruit2.png" alt="">
+<h2 class="text-xl ">Strawbery</h2>
+    </div>
+    <div class="flex flex-col justify-center items-center ">
+<img class="w-36" src="./images/fruit3.png" alt="">
+<h2 class="text-xl ">Strawbery</h2>
+    </div>
+    <div class="flex flex-col justify-center items-center ">
+<img class="" src="./images/fruit4.png" alt="">
+<h2 class="text-xl ">Strawbery</h2>
+    </div>
+    <div class="flex flex-col justify-center items-center ">
+<img class="" src="./images/fruit5.png" alt="">
+<h2 class="text-xl ">Strawbery</h2>
+    </div>
+  </div>
+</section>
+<!-- end  -->
+<!-- time section  -->
+<section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 mt-10">
+  <div class="flex justify-between items-center gap-16 flex-col md:flex-row">
+  <div>
+<h1 class="text-5xl font-extrabold">Deal of the day</h1>
+<p class="text-sm font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+  </div>
+  <div>
+    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+      <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:15;"></span>
+        </span>
+        days
+      </div> 
+      <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:10;"></span>
+        </span>
+        hours
+      </div> 
+      <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:24;"></span>
+        </span>
+        min
+      </div> 
+      <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:14;"></span>
+        </span>
+        sec
+      </div>
+    </div>
+
+  </div>
+  </div>
+</section>
+<!-- time section end  -->
+<!-- card section  -->
+<section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 mt-16">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
+
+  <div class="card  bg-base-100 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <p class="text-orange-400">Apples</p>
+      <div class="rating">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-ghost text-orange-400">Details</button>
+      </div>
+    </div>
+  </div>
+  <div class="card  bg-base-100 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <p class="text-orange-400">Apples</p>
+      <div class="rating">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-ghost text-orange-400">Details</button>
+      </div>
+    </div>
+  </div>
+  <div class="card  bg-base-100 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <p class="text-orange-400">Apples</p>
+      <div class="rating">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-ghost text-orange-400">Details</button>
+      </div>
+    </div>
+  </div>
+  <div class="card  bg-base-100 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      <p class="text-orange-400">Apples</p>
+      <div class="rating">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-ghost text-orange-400">Details</button>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+</section>
+<!-- card section end  -->
+
 
   </main>
 </body>
